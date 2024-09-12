@@ -1,0 +1,20 @@
+
+@media (max-width:650px){
+    #hero-footer {
+        color: white;
+        font-size: 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 11vw 4vw;} 
+    #chotiheading {
+            margin-top: 38vw;
+            font-size: 5vw
+        }
+    #heading{
+        margin-top: 15vw;
+    }
+    #arrow{
+        display: none;
+    }
+}

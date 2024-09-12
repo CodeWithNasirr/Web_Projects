@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+ 
+
+
+.mouse-hover{
+    transition:all cubic-bezier(0.175, 0.885, 0.32, 1.275),10ms;
+    background-color: #95C11E;
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.mouse-hover-blur{
+    transition:all cubic-bezier(0.175, 0.885, 0.32, 1.275),10ms;
+    background-color: #96c11e7e;
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(40px);
+    z-index: 9;
+}
+
+
+.nav{
+    width: 100%;
+    height: 120px;
+    gap: 39px;
+    display: flex;
+    padding: 0vw 9vw;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 999;
+    position: fixed;
+}
+.nav img{
+    height: 60px;
+}
+.nav h6 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.main{
+    position: relative;
+    background-color: rgba(2, 1, 1, 0.473); 
+}
+
+
+.page1{
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 900;
+    z-index: 10;
+
+}
+
+.page1 h1{
+    font-size: 100px;
+    font-weight: 900;
+    position: relative;
+}
+.page1 h1::before{
+    content: "EAT. DRINK. PLAY.";
+    font-size: 100px;
+    font-weight: 900;
+    position: absolute;
+    /* background-color: red; */
+    top: -3px;
+    color: black;
+    z-index: -1;
+    left: -4px;
+    -webkit-text-stroke: 2px #95C11E;
+}
+
+
+
+
+.page1 h2{
+    line-height: 2;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+.page1 p{
+    width: 42%;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.page2{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.scroll{
+
+    overflow-x: hidden;
+    white-space: nowrap;
+    
+}
+.scroll .scroller-in{
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.scroller-in h4{
+    display: inline-block;
+    font-size: 120px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 2px #95C11E;
+    margin-right: 20px;
+}
+.scroller-in h4:hover{
+    transition-duration: 0.5s;
+    color: #95C11E;
+   
+}
+
+.About-area{
+    display: flex;
+    justify-content: space-around;
+    
+    align-items: center;
+}
+.About-area img{
+    width: 12%;
+    height: 141px;
+    border-radius: 14px;
+    
+}
+
+.About-area .about{
+    padding: 0 40px;
+    line-height: 3;
+    width: 58%;
+    text-align: center;
+}
+
+.About-area p{
+   font-weight: 700;
+}
+
+
+.cards-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+}
+
+.cards-container .cards{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 22%;
+    height: 88%;
+    border-radius: 12%;
+    z-index: 10;
+}
+
+#card1{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+#card2{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+#card3{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+
+.cards .overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  #95C11E; /* Semi-transparent background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 12%;
+}
+
+.overlay h4, .overlay p {
+    margin: 10px 0;
+}
+
+.cards .overlay:hover{
+    transition-duration: 0.5s;
+    opacity: 1;
+}
